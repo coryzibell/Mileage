@@ -12,7 +12,18 @@ class CreateLocationsTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('locations', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name')->unique();
+            $table->string('address');
+            $table->string('city');
+            $table->string('state');
+            $table->string('zip');
+            $table->boolean('private');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -22,6 +33,6 @@ class CreateLocationsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('locations');
     }
 }
