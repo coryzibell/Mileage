@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Mileage Calculator</title>
+        <title>Dashboard</title>
 
         <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -38,8 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Mileage Calculator</div>
-                <div><h2><a href="auth/login">Login</a> | <a href="auth/login">Register</a></h2></div>
+                <div class="title">This will be the dashboard.</div>
             </div>
         </div>
     </body>
