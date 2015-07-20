@@ -99,7 +99,10 @@ class LocationController extends Controller
      */
     public function edit($id)
     {
-        //
+        $location = Location::find($id);
+        
+        return \View::make('locations.edit')
+        	->with('location', $location);
     }
 
     /**
@@ -111,7 +114,34 @@ class LocationController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $rules = array(
+	        'name'		=>	'required',
+	        'address'	=>	'required',
+	        'city'		=>	'required',
+	        'state'		=>	'required',
+	        'zip'		=>	'required|numeric'
+        );
+        $validator = Validator::make(Input::all(), $rules);
+        
+        if ($validator->fails()) {
+	        return Redirect::to('locations' . $id . '/edit')
+	        	->withErrors($validator)
+	        	->withInput(Input::except('password'));
+        }	else{
+	        $location = Location::find($id);
+	        $location->name		= Input::get('name');
+	        $location->address	= Input::get('address');
+	        $location->city		= Input::get('city');
+	        $location->state	= Input::get('state');
+	        $location->zip		= Input::get('zip');
+	        $location->public	= FALSE;
+	        $location->user_id	= Auth::id();
+	        $location->save();
+	        
+	        Session::flash('message', 'Successfully added location!');
+	        return Redirect::to('locations');
+        }
+
     }
 
     /**
