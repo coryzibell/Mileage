@@ -42,7 +42,7 @@
             <td>{{ $value->id }}</td>
             <td>{{ $value->name }}</td>
             <td>{{ $value->address }}</td>
-            <td>{{ $value->public }}</td>
+            <td>{!! $value->public ? 'True' : 'False' !!}</td>
 
             <!-- we will also add show, edit, and delete buttons -->
             <td>

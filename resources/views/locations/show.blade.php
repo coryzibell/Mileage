@@ -15,7 +15,7 @@
     </div>
     <ul class="nav navbar-nav">
         <li><a href="{{ URL::to('locations') }}">View All Locations</a></li>
-        <li><a href="{{ URL::to('locations') }}">Create a Location</a>
+        <li><a href="{!! URL::to('locations/create') !!}">Create a Location</a>
     </ul>
 </nav>
 
