@@ -1,5 +1,5 @@
 <!-- Stored in resources/views/layouts/master.blade.php -->
-
+<!DOCTYPE html>
 <html>
     <head>
         <title>Mileage - @yield('title')</title>

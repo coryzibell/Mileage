@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">This will be the dashboard.</div>
+                <div class="title">Welcome to the mileage calculator.<br /> Here's how it works.<br />Do it yourself.</div>
             </div>
         </div>
     </body>
