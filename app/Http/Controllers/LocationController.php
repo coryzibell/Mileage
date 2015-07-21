@@ -134,7 +134,6 @@ class LocationController extends Controller
 	        $location->city		= Input::get('city');
 	        $location->state	= Input::get('state');
 	        $location->zip		= Input::get('zip');
-	        $location->public	= FALSE;
 	        $location->user_id	= Auth::id();
 	        $location->save();
 	        

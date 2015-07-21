@@ -15,7 +15,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Central Office',
 			'address' => '22 Liberty Street',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -25,7 +25,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Maloney',
 			'address' => '121 Gravel Street',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -35,7 +35,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Platt',
 			'address' => '220 Coe Avenue',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06451',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -45,7 +45,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Lincoln',
 			'address' => '164 Centennial Avenue',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06451',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -55,7 +55,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Washington',
 			'address' => '1225 North Broad',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -65,7 +65,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Barry',
 			'address' => '124 Columbia Street',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06451',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -75,7 +75,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Franklin',
 			'address' => '426 West Main Street',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06451',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -85,7 +85,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Hale',
 			'address' => '277 Atkins Street Ext.',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -95,7 +95,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Hanover',
 			'address' => '208 Main Street',
 			'city' => 'S. Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06451',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -105,7 +105,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Hooker',
 			'address' => '70 Overlook Road',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -115,7 +115,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Pulaski',
 			'address' => '100 Clearview Avenue',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -125,7 +125,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Putnam',
 			'address' => '133 Parker Avenue',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -135,7 +135,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Sherman',
 			'address' => '64 North Pearl Street',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -145,7 +145,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'CCRC',
 			'address' => '191 Pratt Street',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -155,7 +155,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Maintenance',
 			'address' => '998 North Colony Road',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -165,7 +165,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Central Registration',
 			'address' => '165 Miller Street',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -175,7 +175,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Venture',
 			'address' => '883 Paddock Avenue',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -185,7 +185,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'YMCA',
 			'address' => '110 W Main Street',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -195,7 +195,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Success Academy',
 			'address' => '14 W Main Street',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id
@@ -205,7 +205,7 @@ class LocationTableSeeder extends Seeder {
 			'name' => 'Edison',
 			'address' => '1355 N Broad Street',
 			'city' => 'Meriden',
-			'state' => 'CT',
+			'state' => 'Connecticut',
 			'zip' => '06450',
 			'public' => TRUE,
 			'user_id' => User::first()->id

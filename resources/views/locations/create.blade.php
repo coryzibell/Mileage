@@ -1,4 +1,4 @@
-<!-- app/views/locations/create.blade.php -->
+<!-- resources/views/locations/create.blade.php -->
 
 
 

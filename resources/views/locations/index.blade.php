@@ -47,8 +47,7 @@
             <!-- we will also add show, edit, and delete buttons -->
             <td>
 
-                <!-- delete the location (uses the destroy method DESTROY /locations/{id} -->
-                <!-- we will add this later since its a little more complicated than the other two buttons -->
+                <!-- Archive the location (uses the destroy method DESTROY /locations/{id} -->
                 
                 @if ($value->user_id == Auth::id())
                 

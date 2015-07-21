@@ -1,4 +1,4 @@
-<!-- app/views/locations/show.blade.php -->
+<!-- resources/views/locations/show.blade.php -->
 
 <!DOCTYPE html>
 <html>
