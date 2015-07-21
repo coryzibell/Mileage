@@ -61,7 +61,7 @@ class LocationController extends Controller
         if ($validator->fails()) {
 	        return Redirect::to('locations/create')
 	        	->withErrors($validator)
-	        	->withInput(Input::except('password'));
+	        	->withInput(Input::all());
         }	else{
 	        $location = new Location;
 	        $location->name		= Input::get('name');
@@ -126,7 +126,7 @@ class LocationController extends Controller
         if ($validator->fails()) {
 	        return Redirect::to('locations' . $id . '/edit')
 	        	->withErrors($validator)
-	        	->withInput(Input::except('password'));
+	        	->withInput(Input::all());
         }	else{
 	        $location = Location::find($id);
 	        $location->name		= Input::get('name');
