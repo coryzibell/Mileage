@@ -138,7 +138,7 @@ class LocationController extends Controller
 	        $location->user_id	= Auth::id();
 	        $location->save();
 	        
-	        Session::flash('message', 'Successfully added location!');
+	        Session::flash('message', 'Successfully updated location!');
 	        return Redirect::to('locations');
         }
 
@@ -152,6 +152,12 @@ class LocationController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $location = Location::find($id);
+        $location->active = FALSE;
+        $location->save();
+
+        // redirect
+        Session::flash('message', 'Successfully deleted the location!');
+        return Redirect::to('locations');
     }
 }

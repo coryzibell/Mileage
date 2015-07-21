@@ -11,11 +11,11 @@
 
 <nav class="navbar navbar-inverse">
     <div class="navbar-header">
-        <a class="navbar-brand" href="{{ URL::to('locations') }}">Locations</a>
+        <a class="navbar-brand" href="{!! URL::to('locations') !!}">Locations</a>
     </div>
     <ul class="nav navbar-nav">
-        <li><a href="{{ URL::to('locations') }}">View All Locations</a></li>
-        <li><a href="{{ URL::to('locations/create') }}">Create a Location</a>
+        <li><a href="{!! URL::to('locations') !!}">View All Locations</a></li>
+        <li><a href="{!! URL::to('locations/create') !!}">Create a Location</a>
     </ul>
 </nav>
 
@@ -23,7 +23,7 @@
 
 <!-- will be used to show any messages -->
 @if (Session::has('message'))
-    <div class="alert alert-info">{{ Session::get('message') }}</div>
+    <div class="alert alert-info">{!! Session::get('message') !!}</div>
 @endif
 
 <table class="table table-striped table-bordered">
@@ -39,9 +39,9 @@
     <tbody>
     @foreach($locations as $key => $value)
         <tr>
-            <td>{{ $value->id }}</td>
-            <td>{{ $value->name }}</td>
-            <td>{{ $value->address }}</td>
+            <td>{!! $value->id !!}</td>
+            <td>{!! $value->name !!}</td>
+            <td>{!! $value->address !!}</td>
             <td>{!! $value->public ? 'True' : 'False' !!}</td>
 
             <!-- we will also add show, edit, and delete buttons -->
@@ -49,13 +49,22 @@
 
                 <!-- delete the location (uses the destroy method DESTROY /locations/{id} -->
                 <!-- we will add this later since its a little more complicated than the other two buttons -->
+                
+                @if ($value->user_id == Auth::id())
+                
+	                {!! Form::open(array('url' => 'locations/' . $value->id, 'class' => 'pull-right')) !!}
+	                    {!! Form::hidden('_method', 'DELETE') !!}
+	                    {!! Form::submit('Delete this Location', array('class' => 'btn btn-warning')) !!}
+	                {!! Form::close() !!}
+	                
+	            @endif
 
                 <!-- show the location (uses the show method found at GET /locations/{id} -->
-                <a class="btn btn-small btn-success" href="{{ URL::to('locations/' . $value->id) }}">Show this Location</a>
+                <a class="btn btn-small btn-success" href="{!! URL::to('locations/' . $value->id) !!}">Show this Location</a>
 
                 <!-- only shows the edit button if the location belongs to the user -->
                 @if ($value->user_id == Auth::id())
-                	<a class="btn btn-small btn-info" href="{{ URL::to('locations/' . $value->id . '/edit') }}">Edit this Location</a>
+                	<a class="btn btn-small btn-info" href="{!! URL::to('locations/' . $value->id . '/edit') !!}">Edit this Location</a>
                 @endif
 
                 
